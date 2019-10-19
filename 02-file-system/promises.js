@@ -12,7 +12,15 @@ function addFronsting(cake) {
     });
 }
 
-bakeACake()
-    .then(addFronsting)
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+async function main() {
+    try {
+        const cake = await bakeACake();
+        const cakeWithFrosting = await addFronsting(cake);
+        console.log(cakeWithFrosting);
+    }
+    catch(err) {
+        console.log(err);
+    }
+}
+
+main();
