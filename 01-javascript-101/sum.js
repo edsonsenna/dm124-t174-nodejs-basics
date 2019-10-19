@@ -10,9 +10,12 @@ const argvLastElement = process.argv.length - 1;
 
 let numbers = process.argv.splice(argvFirstElement, argvLastElement);
 
+let isNumber = number => Number(number) ? Number(number) : Number(0);
+let justNumbers = value => isNumber(value);
+let sumNumbers = (previousValue, currentValue) => ( Number(previousValue) + Number(currentValue) );
+
 let sumArgvNumbers = numbers
-                        .filter( value => Number(value) ? Number(value) : Number(0))
-                        .reduce((previousValue, currentValue) =>
-                        Number(previousValue) + Number(currentValue));
+                        .filter(justNumbers)
+                        .reduce(sumNumbers, 0);
 
 console.log(`The sum of argv's numbers is: ${sumArgvNumbers}`);
