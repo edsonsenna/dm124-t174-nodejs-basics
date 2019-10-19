@@ -1,10 +1,3 @@
-let numberA = 11;
-let numberB = 31;
-
-const sum = numberA + numberB;
-
-console.log(`The sum is: ${sum}`);
-
 let numbers = process.argv;
 
 let justNumbers = number => !!Number(number);
