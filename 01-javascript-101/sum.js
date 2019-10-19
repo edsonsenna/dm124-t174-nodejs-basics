@@ -5,13 +5,9 @@ const sum = numberA + numberB;
 
 console.log(`The sum is: ${sum}`);
 
-const argvFirstElement = 2;
-const argvLastElement = process.argv.length - 1;
+let numbers = process.argv;
 
-let numbers = process.argv.splice(argvFirstElement, argvLastElement);
-
-let isNumber = number => Number(number) ? Number(number) : Number(0);
-let justNumbers = value => isNumber(value);
+let justNumbers = number => !!Number(number);
 let sumNumbers = (previousValue, currentValue) => ( Number(previousValue) + Number(currentValue) );
 
 let sumArgvNumbers = numbers
