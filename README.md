@@ -2,7 +2,7 @@
 
 Conteúdo produzido na disciplina DM124 referente a turma T174 de 2019. \
 Discente: Edson de Senna Júnior. \
-Docente: Edy Segura. \
+Docente: Edy Segura.
 
 ## References
 
