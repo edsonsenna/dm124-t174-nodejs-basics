@@ -1,6 +1,8 @@
 # Node.js Basics
 
-Conteúdo produzido para disciplina DM124 referente as turmas T174 de 2019.
+Conteúdo produzido na disciplina DM124 referente a turma T174 de 2019.
+Discente: Edson de Senna Júnior
+Docente: Edy Segura
 
 ## References
 
