@@ -9,7 +9,10 @@ const names = [
 ]
 
 const print = (name, index) => {
-    console.log(chalk.default[index % 2 === 0 ? 'blue' : 'yellow'](name));
+    const colors = ['blue', 'yellow', 'green', 'red'];
+    const colorIndex = index % colors.length;
+    const colorPicked = colors[colorIndex];
+    console.log(chalk.default[colorPicked](name));
 }
 
 names
