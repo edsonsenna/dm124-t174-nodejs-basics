@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start": "node --experimental-modules --es-module-specifier-resolution=node index.js"
+    },
+    "devDependencies": {
+        "ts-node": "^8.4.1",
+        "typescript": "^3.6.4"
+    }
+}
